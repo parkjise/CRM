@@ -1,0 +1,33 @@
+.empty-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  &__img{
+    &1{
+      @include empty(80,90,ico_empty_01);
+    }
+    &2{
+      @include empty(99,96,ico_empty_02);
+    }
+  }
+  &__text{
+    font-size: rem(18);
+    line-height: rem(29);
+    text-align: center;
+    color: $gray55;
+    b{
+      display: block;
+      padding: 0 rem(4);
+      font-size: rem(15);
+      line-height: rem(23);
+      color: $graya5;
+    }
+  }
+  &.height-type1{
+    height: calc(100vh - rem(300));
+  }
+  &.height-type2{
+    height: calc(100vh - rem(123));
+  }
+}

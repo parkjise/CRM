@@ -1,0 +1,73 @@
+input:not([type="checkbox"],[type="radio"]){
+  padding: 0 rem(16);
+  height: rem(47);
+  border: 1px solid $grayd6;
+  border-radius: rem(47);
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: rem(23);
+  color: $graya5;
+  &[readonly]{
+    background-color: $grayf4;
+  }
+}
+input[type="radio"]{
+  @include hide;
+  + label{
+    @include bg('ico_radio_off.svg',left);
+    display: inline-flex;
+    align-items: center;
+    padding-left:rem(32);
+    height: rem(24);
+    font-weight: 500;
+    font-size: rem(15);
+    line-height: rem(23);
+    color: $gray1e;
+  }
+  &:checked{
+    + label{
+      @include bg('ico_radio_on.svg',left)
+    }
+  }
+}
+input[type="checkbox"]{
+  @include hide;
+  + label{
+    @include bg('ico_check_off.svg',left);
+    display: inline-flex;
+    align-items: center;
+    padding-left:rem(30);
+    height: rem(24);
+    font-weight: 500;
+    font-size: rem(15);
+    line-height: rem(23);
+    color: $gray55;
+  }
+  &:checked{
+    + label{
+      @include bg('ico_check_on.svg',left)
+    }
+  }
+}
+.spinner{
+  display: inline-flex;
+  position: relative;
+  input{
+    width: rem(98);
+    height: rem(32);
+    text-align: center;
+    color: $gray1e;
+  } 
+  &-minus{
+    @include position(left,rem(6),top,50%);
+    @include bg('ico_minus.svg',center);
+    width: rem(20);
+    height: rem(20);
+  }
+  &-plus{
+    @include bg('ico_plus.svg',center);
+    @include position(right,rem(6),top,50%);
+    width: rem(20);
+    height: rem(20);
+  }
+}

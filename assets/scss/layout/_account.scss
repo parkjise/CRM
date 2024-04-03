@@ -1,0 +1,190 @@
+
+.account-activation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100vh;
+}
+.account-content{
+  position: relative;
+  z-index: 2;
+  width:1152px
+}
+.account-content-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  .logo{
+    width: 11.25rem;
+    height: 3.10375rem;
+    background-image: url(/images/images/hanwha.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+.account-content-bottom{
+  display: flex;
+  align-items: center;
+  // width:calc(100% - 10rem);
+  width:100%;
+  padding: 5rem;
+  background-color: #fff;
+  border-radius: 1.5625rem;
+  box-shadow: 0.5rem  0.125rem 3.875rem rgb(34, 51, 89,0.1);
+  > div{
+    flex: 1;
+  }
+}
+.bottom-left{
+  p{
+    font-size: 1.875rem;
+    color: $black27;
+    line-height: 130%;
+    font-weight: 300;
+  }
+  span{
+    display: block;
+    color: $grayb5;
+  }
+}
+.bottom-right{
+  ul{
+    padding: 1.25rem;
+    color: $gray7b;
+    li{
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      & + li{
+        padding-top: 1.875rem;
+      }
+      span{
+        display: flex;
+        align-items: center;
+        i{
+          display:inline-block;
+          padding-right: 0.9375rem;
+        }
+        button{
+          margin-left: 1.25rem;
+        }
+        &.disabled:before,&.activate:before{
+          content: '';
+          display: inline-block;
+          width: 1.625rem;
+          height: 1.6875rem;
+          background-image: url(/images/images/account-x.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        &.activate:before{
+          background-image: url(/images/images/account-check.svg);
+        }
+      }
+    }
+  }
+}
+.gra-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // z-index: -1;
+  overflow: hidden;
+  .float{
+    width: 100%;
+    height: 100%;
+    filter: blur(200px);
+    opacity: 0.5;
+    .circle{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      position: absolute;
+      &.orange{
+        background-color: #F37321;
+        z-index: 2;
+        top: 50%;
+        left: 15%;
+      }
+      &.navy{
+        background-color: #353968;
+        right: 15%;
+        top: 55%;
+      }
+    }
+  }
+}
+.certification-num{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ar-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 0 40px;
+  h1{
+    width:140px;
+    height: 38.62px;
+    background-image: url(/images/images/hanwha.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .object-key{
+    font-size: 14px;
+    span{
+      &:last-child{
+        padding-left: 10px;
+        color: #272B2F;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.ar-content{
+  padding: 0 40px 40px 40px;
+  h2{
+    padding: 60px 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  table{
+    border: 1px solid #DFE5EF;
+    font-size: 14px;
+    tr{
+      &:last-child{
+        td{
+          border-bottom: none;
+        } 
+      }
+    }
+    th{
+      width: 40%;
+      background-color: #f8f8f8;
+      text-align: left;
+      border-bottom: 1px solid #DFE5EF;
+      font-weight: 500;
+      padding: 8px 10px;
+      border-right: 1px solid #DFE5EF;
+      &:last-child{
+        border-bottom: none;
+      }
+    }
+    td{
+      width: 60%;
+      padding: 8px 10px;
+      border-bottom: 1px solid #DFE5EF;
+      &:last-child{
+        border-right: none;
+      }
+    }
+  }
+}

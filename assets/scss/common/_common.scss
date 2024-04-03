@@ -1,0 +1,215 @@
+.d-flex{
+  display: flex;
+}
+.jc-between{
+  justify-content: space-between;
+}
+.ai-center{
+  align-items: center;
+}
+.lang{
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.country{
+  span{
+    display: block;
+  }
+  & + span{
+    font-size: 12px;
+  }
+  .lang-en{
+    background-image: url(/images/images/usa.svg);
+    background-size: 100%;
+    width:1.625rem;
+    height:1.6875rem;
+  }
+}
+.point{
+  color: $black27;
+}
+.modernize-5ad73w-MuiPaper-root-MuiDialog-paper{
+  border-radius: 20px !important;
+  padding: 2.5rem 3.75rem 2.5rem 2.5rem;
+}
+.pop-close{
+  min-width: auto !important;
+  width: 26px !important;
+  height: 26px !important;
+  border-radius: 50% !important;
+  border: 1px solid $black27 !important;
+  // background-image: url(/images/images/pop-close.svg);
+  // background-size: 26px 26px;
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  background-color: #fff !important;
+  padding: 0 !important;
+  position: absolute !important;
+  top: 20px;
+  right: 20px;
+  color: $black27 !important;
+}
+
+// tab
+.modernize-1o2rqyd-MuiButtonBase-root-MuiTab-root {
+  color: #7b7b7b  !important;
+}
+.modernize-1o2rqyd-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #353968 !important;
+  font-weight: 600  !important;
+}
+.modernize-6vsqoc-MuiTabs-indicator {
+  background-color: #353968  !important;
+}
+.modernize-5rewhp-MuiPaper-root-MuiCard-root {
+  color: #272b2f  !important;
+  label {
+    font-weight: 500  !important;
+  }
+}
+.modernize-kb9fe7-MuiCardHeader-root {
+  .MuiCardHeader-title{
+    font-size: 1rem  !important;
+  }
+}
+.modernize-njqjv2-MuiPaper-root-MuiCard-root {
+  box-shadow: none  !important;
+  border: 1px solid #efefef  !important;
+}
+.modernize-kb9fe7-MuiCardHeader-root {
+  padding: 10px 24px  !important;
+}
+// radio label
+.modernize-16jqla7-MuiTypography-root{
+  font-size: 12px !important;
+}
+
+// input
+.login-pop-input{
+  input{
+    height:53.13px;
+    padding: 0 !important;
+  }
+}
+
+// popup form
+.step-style{
+  margin-top: 20px;
+}
+.popup-form{
+  label{
+    font-weight: 500;
+  }
+  .btn-outline{
+    min-width: auto;
+    white-space: nowrap;
+    &.gray{
+      height: 44.13px;
+    }
+    .step-style{
+      button{
+        width: 28px;
+        height: 28px;
+        > svg{
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+      .btn-outline{
+        &.gray{
+          height: 44.13px;
+        }
+      }
+    }
+  }
+  .modernize-1xt0r1m-MuiInputBase-root-MuiOutlinedInput-root{
+    height: 44.13px;
+  }
+}
+// Chip
+.authchip{
+  display:inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  border: 1px solid #EFEFEF;
+  min-width: 150px;
+  font-size: 14px;
+  padding: 8px 14px;
+  color: #7B7B7B;
+  border-radius: 50px;
+  &.status{
+    min-width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+// Steps
+.crm-step{
+  .modernize-m5vj9m-MuiStepper-root {
+    margin: 1.875rem auto;
+    padding: 0 10rem;
+    @media (max-width: 1000px) {
+      padding: 0 0rem;
+    }
+  }
+}
+.modernize-nwb587-MuiSvgIcon-root-MuiStepIcon-root{
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+.modernize-nwb587-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+  color:#1A1D44 !important;
+}
+// Box
+.box-type-1,.box-type-2{
+  border-radius: 7px;
+  font-size: 14px;
+  border: 1px solid #DFE5EF;
+  overflow: hidden;
+  p:first-child{
+    padding:6px 10px;
+    color: #7b7b7b;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #DFE5EF;
+  }
+  p:last-child{
+    color: #272B2F;
+    padding:10px;
+  }
+  &.nodata{
+    p:first-child{
+      background-color: #ffffff;
+      text-align: center;
+      border-bottom:none;
+      padding:15px 10px;
+    }
+  }
+}
+
+.box-type-2{
+  display: flex;
+  p:first-child{
+    color: #272B2F;
+    border-bottom: none;
+    border-right: 1px solid #DFE5EF;
+    padding:6px 10px;
+    min-width: 9.375rem;
+  }
+  p:last-child{
+    padding:6px 10px;
+  }  
+}
+.nodata{
+  border-radius: 7px;
+  font-size: 14px;
+  border: 1px solid #DFE5EF;
+  overflow: hidden;
+  background-color: #ffffff;
+  p{
+    text-align: center;
+    padding:15px 10px;
+  }
+} 

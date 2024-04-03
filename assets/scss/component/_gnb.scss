@@ -1,0 +1,33 @@
+.gnb{
+  position: fixed;
+  left:0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px rem(-4) rem(4) rgba($gray06,0.04);
+  background-color: #fff;
+  ul{
+    display: flex;
+  }
+  li{
+    flex:1;
+  }
+  a{
+    display: block;
+    padding: rem(35) rem(6);
+    font-weight: 500;
+    font-size: rem(11);
+    line-height: rem(16);
+    text-align: center;
+    color: $gray83;
+  }
+  @for $i from 1 to 6{
+    .ico#{$i}{
+      @include bg('ico_gnb_off' + #{$i} + '.svg',center rem(8));
+      &:hover{
+        @include bg('ico_gnb_on' + #{$i} + '.svg',center rem(8));
+        color: #000;
+      }
+    }
+  }
+}
