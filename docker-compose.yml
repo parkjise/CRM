@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  # Next.js app service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '1900:1900'
+    volumes:
+      - /usr/src/app/node_modules
+      - ./:/usr/src/app
+    command: [ "npm","run","dev" ]
+#    command: [ "npm","run","start" ]
